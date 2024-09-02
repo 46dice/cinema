@@ -1,0 +1,26 @@
+.link {
+	@apply flex items-center gap-4  pb-4;
+
+	> span {
+		@apply text-gray-600;
+	}
+	> svg {
+		@apply fill-gray-600 text-2xl;
+
+		&:hover {
+		}
+	}
+
+	> svg,
+	span {
+		@apply transition-colors;
+	}
+	&:hover {
+		> span {
+			@apply text-primary transition-colors;
+		}
+		> svg {
+			@apply fill-primary;
+		}
+	}
+}

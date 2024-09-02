@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    modules:["@nextjs/tailwindcss"],
 	poweredByHeader: false,
 	optimizeFonts: false,
 	env: {
