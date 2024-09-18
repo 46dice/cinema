@@ -1,0 +1,23 @@
+.search {
+	@apply rounded-3xl border-gray-700 border px-3 py-2 transition-colors flex items-center gap-2;
+
+	> svg {
+		@apply fill-gray-700 transition-colors text-2xl;
+	}
+
+	> input {
+		@apply outline-none text-white placeholder:text-gray-600 bg-transparent block w-full;
+	}
+
+	&:focus-within {
+		@apply border-gray-600;
+
+		> svg {
+			@apply fill-gray-300;
+		}
+
+		> input {
+			@apply text-gray-300;
+		}
+	}
+}

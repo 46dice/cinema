@@ -1,0 +1,36 @@
+.link {
+	@apply flex items-center gap-2;
+	> img {
+		@apply transition-all rounded-image;
+	}
+	&:hover {
+		> img {
+			@apply outline outline-1 outline-primary;
+		}
+	}
+}
+.title,
+.ratingNum {
+	@apply text-white text-1lg;
+}
+
+.title {
+	@apply block mb-1;
+}
+
+.genres {
+	@apply text-xs flex text-gray-600 gap-1 mb-4;
+	> li {
+		@apply transition-colors;
+		&:hover {
+			@apply text-white;
+		}
+	}
+}
+
+.rating {
+	@apply flex gap-2 items-center;
+	> svg {
+		@apply text-yellow-700;
+	}
+}

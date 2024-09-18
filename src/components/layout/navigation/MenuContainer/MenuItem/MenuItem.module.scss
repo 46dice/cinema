@@ -1,0 +1,17 @@
+.active {
+	@apply relative;
+
+	> svg {
+		@apply fill-primary !important;
+	}
+
+	> span {
+		@apply text-primary !important;
+	}
+
+	&::after {
+		content: '';
+		width: 2px;
+		@apply absolute right-0 h-full bg-primary;
+	}
+}

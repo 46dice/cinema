@@ -1,0 +1,16 @@
+.common {
+  @apply relative;
+}
+.common .label {
+  @apply text-gray-500 block uppercase text-xs;
+}
+.common .label > input {
+  @apply block mt-2 bg-black text-gray-300 text-sm w-full outline-none border-b border-gray-700 pb-2 transition-colors  placeholder:text-gray-800 placeholder:text-sm;
+}
+.common .label > input:focus {
+  @apply border-primary;
+}
+
+.error {
+  @apply absolute -bottom-6 left-0 text-sm w-full text-primary;
+}/*# sourceMappingURL=Field.module.css.map */

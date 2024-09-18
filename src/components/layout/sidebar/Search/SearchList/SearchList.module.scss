@@ -1,0 +1,20 @@
+.list {
+	@apply bg-gray-950 rounded-xl absolute top-full left-0 animate-fade z-10 border border-gray-800 p-4 w-full;
+	top: calc(100% + 15px);
+
+	> li {
+		@apply mb-4 w-full;
+		> a {
+			@apply flex items-center gap-2 w-full p-2;
+			> img {
+				@apply rounded-image;
+			}
+			> span {
+				@apply text-white truncate;
+			}
+			&:hover {
+				@apply bg-gray-800 rounded-sm;
+			}
+		}
+	}
+}

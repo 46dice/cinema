@@ -7,8 +7,8 @@ const primary = '#E30B13';
 module.exports = {
 	content: [
 		'./pages/**/*.{html,js,ts,jsx,tsx}',
-		'./app/components/**/*.{html,js,ts,jsx,tsx}',
-		'./styles/**/*.scss',
+		'./app/**/*.{html,js,ts,jsx,tsx,scss}',
+		'./src/components/**/*.{html,js,ts,jsx,tsx}',
 	],
 	theme: {
 		colors: {
@@ -38,6 +38,7 @@ module.exports = {
 			},
 
 			fontSize: {
+				'1lg': '1rem',
 				'2lg': '1.38rem',
 			},
 

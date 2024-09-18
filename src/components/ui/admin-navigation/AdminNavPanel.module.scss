@@ -1,0 +1,30 @@
+.nav {
+	@apply air-block mb-5;
+	> ul {
+		@apply flex items-center justify-evenly;
+
+		> li {
+			@apply relative;
+			&.active {
+				> a > span {
+					@apply opacity-100;
+				}
+				&::after {
+					@apply bg-primary rounded-md;
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					bottom: 0;
+					left: 0;
+				}
+			}
+			> a > span {
+				@apply inline-block opacity-65 transition-opacity text-sm py-5;
+				&:hover {
+					@apply opacity-100;
+				}
+			}
+		}
+	}
+}

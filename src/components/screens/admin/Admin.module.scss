@@ -1,0 +1,49 @@
+.statistics {
+	> h1 {
+		@apply mb-4;
+	}
+}
+.wrapper {
+	@apply flex justify-evenly;
+}
+
+.block {
+	@apply air-block flex items-center justify-center p-4 w-full;
+	max-width: 400px;
+}
+
+.count {
+	.container {
+		@apply flex flex-col justify-between;
+
+		:first-child {
+			@apply text-4xl mb-2;
+		}
+
+		:last-child {
+			@apply text-sm;
+		}
+	}
+}
+
+.popularMovie {
+	@apply text-center flex flex-col items-center;
+	.info {
+		@apply inline-block;
+	}
+	a {
+		display: block;
+	}
+
+	img {
+		@apply rounded-layout shadow-lg image-like-bg inline-block;
+	}
+
+	h2 {
+		@apply mb-1;
+	}
+
+	span {
+		@apply opacity-50 font-medium mb-2;
+	}
+}

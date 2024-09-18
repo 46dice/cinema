@@ -1,0 +1,20 @@
+.wrapper {
+	@apply w-96 bg-black py-4 px-4 mt-32 mx-auto air-block bg-opacity-80;
+}
+
+.form {
+	@apply flex flex-col gap-8;
+}
+
+.buttons {
+	@apply shadow-lg mx-auto;
+	> button {
+		&:first-child {
+			@apply rounded-r-none;
+		}
+		&:last-child {
+			@apply rounded-l-none opacity-55 transition-opacity hover:opacity-100;
+			background-color: #8f050b;
+		}
+	}
+}
