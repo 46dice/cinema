@@ -1,0 +1,13 @@
+.wrapper {
+	height: 250px;
+	overflow: hidden;
+}
+.editor {
+	@apply h-full flex-shrink-0 flex-nowrap w-full mt-4  rounded-xl border border-primary;
+	> div {
+		@apply bg-gray-300;
+		&:first-child {
+			@apply border-b-black;
+		}
+	}
+}

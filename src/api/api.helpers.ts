@@ -1,3 +1,5 @@
+import toast from 'react-hot-toast';
+
 export const getContentType = () => ({ 'Content-type': 'application/json' });
 
 export const errorCatch = (error: any): string => {
@@ -7,3 +9,5 @@ export const errorCatch = (error: any): string => {
 			: error.response.data.message
 		: error.message;
 };
+
+export const toastError = (error: Error) => toast.error(errorCatch(error));

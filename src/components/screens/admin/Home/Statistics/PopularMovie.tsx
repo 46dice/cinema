@@ -11,14 +11,14 @@ import SubHeading from '@/components/ui/heading/SubHeading';
 
 import { IMovie } from '@/shared/types/movie.types';
 
-import { searchMovieService } from '@/services/searchMovie.service';
+import { movieService } from '@/services/movie.service';
 
 import styles from '../Admin.module.scss';
 
 const PopularMovie: FC = () => {
 	const { data: movie, isLoading } = useQuery({
 		queryKey: ['admin popular movie'],
-		queryFn: () => searchMovieService.getPopular(),
+		queryFn: () => movieService.getPopular(),
 		select: ({ data }) => data[0] as IMovie,
 	});
 

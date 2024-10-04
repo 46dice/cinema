@@ -2,6 +2,8 @@ import { FC } from 'react';
 
 import { useAuth } from '@/hooks/useAuth';
 
+import { getAdminUrl, getProfileUrl } from '@/config/url.config';
+
 import MenuItem from '../MenuContainer/MenuItem/MenuItem';
 
 import LogoutButton from './LogoutButton';
@@ -15,7 +17,7 @@ const UserMenu: FC = () => {
 				<>
 					<MenuItem
 						item={{
-							link: '/profile',
+							link: getProfileUrl(''),
 							icon: 'MdSettings',
 							title: 'Settings',
 						}}
@@ -24,7 +26,7 @@ const UserMenu: FC = () => {
 					{user.isAdmin && (
 						<MenuItem
 							item={{
-								link: '/manage',
+								link: getAdminUrl(''),
 								icon: 'MdAdminPanelSettings',
 								title: 'Admin panel',
 							}}

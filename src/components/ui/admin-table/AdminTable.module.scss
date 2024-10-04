@@ -1,0 +1,29 @@
+.table {
+	width: 100%;
+	border-spacing: 0px 10px;
+	border-collapse: separate;
+	margin: auto;
+
+	thead > tr {
+		@apply bg-secondRed;
+	}
+
+	th {
+		&:last-child {
+			@apply text-right;
+		}
+	}
+
+	th,
+	td {
+		@apply text-white text-sm p-1 rounded-sm;
+	}
+	th {
+		text-align: left;
+	}
+
+	td {
+		@apply bg-gray-800 text-opacity-70;
+		width: 350px;
+	}
+}

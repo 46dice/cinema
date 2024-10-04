@@ -10,6 +10,9 @@ export interface IGenre {
 	updatedAt: Date;
 	__v: 0;
 }
+
+export interface IGenreEditInput extends IGenre {}
+
 export interface IParameters {
 	year: number;
 	duration: number;
@@ -20,7 +23,7 @@ export interface IActor {
 	_id: string;
 	photo: string;
 	name: string;
-	countMovies: number;
+	countMovies: number | string;
 	slug: string;
 }
 

@@ -5,7 +5,7 @@ import { ChangeEvent, useState } from 'react';
 
 import useDebounce from '@/hooks/useDebounce';
 
-import { searchMovieService } from '@/services/searchMovie.service';
+import { movieService } from '@/services/movie.service';
 
 const useSearch = () => {
 	const [searchTerm, setSearchTerm] = useState('');
@@ -13,8 +13,7 @@ const useSearch = () => {
 
 	const { data, isSuccess } = useQuery({
 		queryKey: ['search movie', debouncedSearchTerm],
-		queryFn: async () =>
-			await searchMovieService.getAll(debouncedSearchTerm),
+		queryFn: async () => await movieService.getAll(debouncedSearchTerm),
 		select: ({ data }) => data,
 		enabled: !!debouncedSearchTerm,
 	});

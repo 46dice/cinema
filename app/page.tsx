@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 		description:
 			'Поиск фильмов, новости кино, отзывы пользователей и многое другое.',
 		url: `${process.env.APP_URL}/home`,
-		siteName: 'Your Site Name',
+		siteName: 'Online-Cinema',
 		images: [
 			{
 				url: '/path/to/your/image.jpg',

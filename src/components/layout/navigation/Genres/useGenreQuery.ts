@@ -2,14 +2,14 @@
 
 import { useQuery } from '@tanstack/react-query';
 
-import { GenreService } from '@/services/genre.service';
+import { genreService } from '@/services/genre.service';
 
 import { IMenuItem } from '../MenuContainer/menuContainer.interface';
 
 const useGenreQuery = () => {
 	const { data, isLoading } = useQuery({
 		queryKey: ['genre menu'],
-		queryFn: async () => await GenreService.getGenres(),
+		queryFn: async () => await genreService.getAll(''),
 
 		select: ({ data }) =>
 			data.map(

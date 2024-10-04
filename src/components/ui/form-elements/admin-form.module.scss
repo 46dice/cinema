@@ -1,0 +1,10 @@
+.form {
+	.fields {
+		@apply flex flex-wrap gap-2 justify-between;
+		> div {
+		}
+	}
+	> button {
+		@apply mt-5;
+	}
+}

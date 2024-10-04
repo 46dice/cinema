@@ -11,12 +11,13 @@ import styles from './MenuItem.module.scss';
 
 const MenuItem: FC<{ item: IMenuItem }> = ({ item }) => {
 	const asPath = usePathname();
+	const isCurrentLink = asPath?.match(item.link) && asPath === item.link;
 
 	return (
 		<li>
 			<Link
 				href={item.link}
-				className={cn(asPath === item.link ? styles.active : null)}
+				className={cn(isCurrentLink ? styles.active : null)}
 			>
 				<MaterialIcon icon={item.icon} />
 				<span>{item.title}</span>

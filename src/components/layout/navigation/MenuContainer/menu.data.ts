@@ -25,19 +25,3 @@ export const navMenu: IMenu = {
 		},
 	],
 };
-
-// export const userMenu: IMenu = {
-// 	title: 'General',
-// 	items: [
-// 		{
-// 			link: '/profile',
-// 			icon: 'MdSettings',
-// 			title: 'Settings',
-// 		},
-// 		{
-// 			link: '/auth',
-// 			icon: 'MdLogin',
-// 			title: 'Login',
-// 		},
-// 	],
-// };

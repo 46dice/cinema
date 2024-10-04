@@ -5,7 +5,7 @@ import SkeletonLoader from '@/components/ui/SkeletonLoader/SkeletonLoader';
 
 import { IMovie } from '@/shared/types/movie.types';
 
-import { searchMovieService } from '@/services/searchMovie.service';
+import { movieService } from '@/services/movie.service';
 
 import MovieItem from '../MovieItem/MovieItem';
 
@@ -14,7 +14,7 @@ import styles from './MovieList.module.scss';
 const MovieList: FC = () => {
 	const { data, isLoading } = useQuery({
 		queryKey: ['most popular'],
-		queryFn: async () => await searchMovieService.getPopular(),
+		queryFn: async () => await movieService.getPopular(),
 		select: ({ data }) => data,
 	});
 

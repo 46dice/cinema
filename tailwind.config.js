@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors');
 const plugin = require('tailwindcss/plugin');
 
 const primary = '#E30B13';
+const secondRed = '#41181c';
 
 module.exports = {
 	content: [
@@ -13,6 +14,7 @@ module.exports = {
 	theme: {
 		colors: {
 			primary,
+			secondRed,
 			black: colors.black,
 			white: colors.white,
 			transparent: colors.transparent,
@@ -95,7 +97,7 @@ module.exports = {
 					color: '#fff',
 					borderRadius: '0.65rem',
 					transition: 'background-color .3s ease-in-out',
-					':hover': {
+					'&:hover': {
 						backgroundColor: '#ff0009',
 					},
 				},

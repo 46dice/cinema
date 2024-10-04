@@ -1,8 +1,6 @@
-import Admin from '@/components/screens/admin/Admin';
+import Admin from '@/components/screens/admin/Home/Admin';
 
 import { NextAuthPage } from '@/shared/types/pagesAuth.types';
-
-import styles from './page.module.scss';
 
 const Page: NextAuthPage = () => {
 	return <Admin />;
